@@ -13,9 +13,15 @@ public class HellodaoApplication {
 		SpringApplication.run(HellodaoApplication.class, args);
 	}
 
-	@RequestMapping("")
+	@RequestMapping("/")
 	public String hello()
 	{
-		return "Hello World!";
+		return "你好，版本经理!";
 	}
+	
+//	@RequestMapping("/add/")
+//	public String add(String a,String b)
+//	{
+//		return a+b;
+//	}
 }
